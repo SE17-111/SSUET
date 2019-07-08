@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<style>
+
+
+
+</style>
+
+</head>
+
+<body>
+<p>The quick brown fox jumps over the lazy dog 1.</p>
+<p>The quick brown fox jumps over the lazy dog 2.</p>
+<p>The quick brown fox jumps over the lazy dog 3.</p>
+<p>The quick brown fox jumps over the lazy dog 4.</p>
+<p>The quick brown fox jumps over the lazy dog 5.</p>
+
+<a href = "JavaScript:void(0)" onclick = "show();" id = "q1">The quick brown fox jumps over the lazy dog.</a>
+
+<script>
+var par = document.getElementTagName("p")
+par[1].innerHTML = "The Dog";
+
+for(var i = 0; i >= par.lenght; i++){
+par[i].innerHTML.style.font-size = "25px";
+}
+function show(){
+var a = document.getElementById('q1');
+var b = a.hasAttribute("class");
+alert(""+b);
+}
+</script>
+
+</body>
+
+</html>

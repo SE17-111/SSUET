@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "counter.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+<body>
+<script>
+var q = 12;
+timer();
+var c = 0;
+var d = true;
+var stopval = q+1;
+function timer()
+	{	
+		setInterval("count()",100);
+	}
+function count()
+	{
+		if(d == true)
+			{
+				document.getElementById("we").innerHTML = c;
+				c++;
+				if (c == stopval)
+					{
+						d = false;
+					}
+			}
+}
+</script>
+
+<div  id = "we">
+</div>
+</body>
+</html>
